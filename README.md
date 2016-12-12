@@ -1,2 +1,4 @@
 This is Portfolio project
-used Bootstrap & jQuery
+with no Bootsrap, all from zero.
+
+Was interesting to see how many BUGS was in page, some still remain xD
