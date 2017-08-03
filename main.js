@@ -130,8 +130,9 @@ start();
 function start(){
 console.log("start");
 var textInfoElements=document.getElementsByClassName("info");
-console.log(textInfoElements);
-console.log(infoArr[0]);
+var textInfoNum=extInfoElements.length;
+//console.log(textInfoElements);
+console.log(textInfoElements.length);
 
 //console.log(text.children[2].textContent);
 //text.innerHTML="GG";
