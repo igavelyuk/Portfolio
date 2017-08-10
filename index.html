@@ -1,206 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
- <meta name="description" content="freeCodeCamp portfilio project">
-  <meta name="keywords" content="Portfilio, CV, freeCodeCamp, fcc, fCC, Evil,Epic,Coder, EEC">
-   <meta name="author" content="EvilEpicCoder" >  
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	 <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="freeCodeCamp portfilio project"/>
+		<meta name="keywords" content="Portfilio, CV, freeCodeCamp, fcc, fCC, Evil,Epic,Coder, EEC"/>
+		<meta name="author" content="EvilEpicCoder" />  
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+		<!--Import materialize.css-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+    <style>
+      html, body, .block {
+        height: 100%;
+      }
+      nav ul li a:hover, nav ul li a.active {
+        background-color: rgba(0,0,0,.1);
+      }
+      footer {
+        padding-left: 0;
+      }
+     .pin-top {
+    position: relative;
+  }
 
-<link rel="stylesheet" type="text/css" href="main.css">
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-</head>
+  // Class for when element is below threshold
+  .pin-bottom {
+    position: relative;
+  }
 
-<body style="background:#fafafa;">
-<div id="particles-js" class="canvas">
-	</div>
-	<!-- particles.js container -->
+  // Class for when element is pinned
+  .pinned {
+    position: fixed !important;
+  }
+  .offset100 {
+    padding-top: 200px;
+  }
+  .overflow100 {
+    z-index:100;
+  }
+    </style>
+    </head>
+   <body><div id="red" class="block red lighten-5">
+  <nav class="pushpin-eec-nav overflow100" data-target="red">
+    <div class="nav-wrapper red">
+      <div class="container">
+        <i class="material-icons brand-logo">account_balance</i>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="active"><a href="#red">Home</a></li>
+          <li><a href="#deep-purple">freeCodeCamp </a></li>
+          <li><a href="#light-blue">free Projects</a></li>
+          <li><a href="#green">Commercial Projects</a></li>
+          <li><a href="#yellow">My Front End Certificate</a></li>
+          <li><a href="#orange">Connect</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
 
-<!-- stats - count particles -->
-<nav class="navbar navbar-toggleable-md bg-inverse navbar-inverse">
-  <a class="navbar-brand" href="#">
-    <img src="EEC.png" width="30" height="30" class="d-inline-block align-top" alt="">
-    EvilEpicCoder
-  </a>
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#social">Social</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#connect">Connect</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<div class="container top-offset-100 ">
-	<div class="row justify-content-md-center section">
-		<div class=""><h1 id="3dtext" class="crazy">EvilEpicCoder</h1></div>
-	</div>
-	<div class="row">
-			<div class="margin_auto">
-		<div class="big-margin"><a class="btn-link btn-deco" href="http://twitter.com/EvilEpicCoder" target="_blank"><i class="i-twitter"></i></a></div>
-		<div class="big-margin"><a href="http://www.freecodecamp.com/gavelyuk" class="btn-link btn-deco" target="_blank"><i class="i-fcc"></i></a></div>
-		<div class="big-margin"><a href="http://www.facebook.com/igor.gavelyuk"  class="btn-link btn-deco" target="_blank"><i class="i-facebook"></i></a></div>
-		<div class="big-margin"><a href="http://vk.com/evilepiccoder" class="btn-link btn-deco" target="_blank"><i class="i-vk"></i></a></div>
+<div id="deep-purple" class="block deep-purple lighten-5">
+  <nav class="pushpin-eec-nav overflow100" data-target="deep-purple">
+    <div class="nav-wrapper deep-purple">
+      <div class="container">
+        <i class="material-icons brand-logo">computer</i>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#red">Home</a></li>
+          <li class="active"><a href="#deep-purple">freeCodeCamp</a></li>
+          <li><a href="#light-blue">free Projects</a></li>
+          <li><a href="#green">Commercial Projects</a></li>
+          <li><a href="#yellow">My Front End Certificate</a></li>
+          <li><a href="#orange">Connect</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+   <div class="offset100 row"><!-- div row -->
+		  
+		    <div class="col s2">
+			<div class="card back-order">
+				<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="EEC_Thumbs/fcc_01.jpg">
+				</div>
+				<div class="card-content">
+				<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				<p><a href="#">This is a link</a></p>
+				</div>
+				<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
 			</div>
-		</div>
-	<div class="row section">
-		<div class="col info">
-			<h2>Why EvilEpicCoder?</h2>
-			<br>
-			<div><a class="eec-read-toggle-off" href="#">collapse</a></div>
-			<div><a class="eec-read-toggle-on" href="#">read</a></div>
-			<p>On freeCodeCamp chat, sometimes people like to have solution, but do not like to think. I am Evil to this people, if I know how to do this task done, i would like to give you a clue to solve this task. And if you are realy stuck I will give you the answer.</p>
-			<p>My live is EPIC, I would like to born in USA but I was born in Ukraine. I would like to be a phisicist and create something unic and special, but I become a Seaman and go to Sea to earn regular money.</p>
-			
-		</div> 
-		<div class="col info">
-			<h3>My future belong on my past.</h3>
-			<p>Since 2001 I use a lot of C++, I like programming, unleashed power to do a lot of things just with one click. It is unleashed power to visualise things, using OpenGL or DirectX.</p>
-			<p>Web is required for people like me, I like make cool thing, I charging inspiration from games, community, and some amaising projects.</p>
-			<p>In 2008 I am starting to plan my "IT incubator" to have. In 2010 I bought a land and old house. in 2012 Start building my two floor house. I planned to make a quiet place for me, my parents, my brother, and in 2018 leave my job and completely move outside the city.</p>
-			<p>In 2015 I starting diying, I was dismissed from my job(I all time work on different vessels and I hate this), in same time my girl friend leave me, in 7 days before wedding, I was lost more than for one year. Than "Ukrainian crisis and war", now situation going completely wrong and bad.</p>
-		</div>
-		<div class="col info">
-			<h4>What I am dooing then nothing to do</h4>
-			<p>I am not young, but I am very lonely person, I would have a whife and kids, but all things in this world required some special time. So I waiting for inspiration to meet my Kirsten Dunst.</p><p>Until I do not have family, it is good time for unleashed creativity.</p>
-			<p>I almost finished building my house. To build a house, it is a longest and hevies project I ever had. In this year I made <b>"Winter is coming"</b> bed, grow around 70 species of ducks, geese and chickens in my <b>"2 hours hand made"</b> incubator.</p>
+	  </div>
+	   <div class="col s2">
+			<div class="card back-order">
+				<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="EEC_Thumbs/fcc_01.jpg">
+				</div>
+				<div class="card-content">
+				<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				<p><a href="#">This is a link</a></p>
+				</div>
+				<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+	  </div>
+	   <div class="col s2">
+			<div class="card back-order">
+				<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="EEC_Thumbs/fcc_01.jpg">
+				</div>
+				<div class="card-content">
+				<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				<p><a href="#">This is a link</a></p>
+				</div>
+				<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+	  </div>
+	   <div class="col s2">
+			<div class="card back-order">
+				<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="EEC_Thumbs/fcc_01.jpg">
+				</div>
+				<div class="card-content">
+				<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				<p><a href="#">This is a link</a></p>
+				</div>
+				<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+	  </div>
+	   <div class="col s2">
+			<div class="card back-order">
+				<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="EEC_Thumbs/fcc_01.jpg">
+				</div>
+				<div class="card-content">
+				<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				<p><a href="#">This is a link</a></p>
+				</div>
+				<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+	  </div>
+	   <div class="col s2">
+			<div class="card back-order">
+				<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="EEC_Thumbs/fcc_01.jpg">
+				</div>
+				<div class="card-content">
+				<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				<p><a href="#">This is a link</a></p>
+				</div>
+				<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+	  </div>
+</div><!-- div row -->
+
+</div>
+
+<div id="light-blue" class="block light-blue lighten-5">
+  <nav class="pushpin-eec-nav overflow100" data-target="light-blue">
+    <div class="nav-wrapper light-blue">
+      <div class="container">
+        <i class="material-icons brand-logo">description</i>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#red">Home</a></li>
+          <li><a href="#deep-purple">freeCodeCamp </a></li>
+          <li class="active"><a href="#light-blue">free Projects</a></li>
+          <li><a href="#green">Commercial Projects</a></li>
+          <li><a href="#yellow">My Front End Certificate</a></li>
+          <li><a href="#orange">Connect</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <div class="offset100 row"><!-- div row -->
+		  
+		    <div class="col s2">
+			<div class="card back-order">
+				<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="EEC_Thumbs/fcc_01.jpg">
+				</div>
+				<div class="card-content">
+				<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				<p><a href="#">This is a link</a></p>
+				</div>
+				<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+	  </div>
+	   <div class="col s2">
+			<div class="card back-order">
+				<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="EEC_Thumbs/fcc_01.jpg">
+				</div>
+				<div class="card-content">
+				<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				<p><a href="#">This is a link</a></p>
+				</div>
+				<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+	  </div>
+	   <div class="col s2">
+			<div class="card back-order">
+				<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="EEC_Thumbs/fcc_01.jpg">
+				</div>
+				<div class="card-content">
+				<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				<p><a href="#">This is a link</a></p>
+				</div>
+				<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+	  </div>
+	   <div class="col s2">
+			<div class="card back-order">
+				<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="EEC_Thumbs/fcc_01.jpg">
+				</div>
+				<div class="card-content">
+				<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				<p><a href="#">This is a link</a></p>
+				</div>
+				<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+	  </div>
+	   <div class="col s2">
+			<div class="card back-order">
+				<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="EEC_Thumbs/fcc_01.jpg">
+				</div>
+				<div class="card-content">
+				<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				<p><a href="#">This is a link</a></p>
+				</div>
+				<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+	  </div>
+	   <div class="col s2">
+			<div class="card back-order">
+				<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="EEC_Thumbs/fcc_01.jpg">
+				</div>
+				<div class="card-content">
+				<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				<p><a href="#">This is a link</a></p>
+				</div>
+				<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+	  </div>
+</div><!-- div row -->
+
+</div>
+
+<div id="green" class="block green lighten-5">
+  <nav class="pushpin-eec-nav overflow100" data-target="green">
+    <div class="nav-wrapper green">
+      <div class="container">
+        <i class="material-icons brand-logo">euro_symbol</i>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#red">Home</a></li>
+          <li><a href="#deep-purple">freeCodeCamp </a></li>
+          <li><a href="#light-blue">free Projects</a></li>
+          <li class="active"><a href="#green">Commercial Projects</a></li>
+          <li><a href="#yellow">My Front End Certificate</a></li>
+          <li><a href="#orange">Connect</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="row"><!-- div row -->
+  <div class="col s4">
+			<div class="card back-order">
+				<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="EEC_Thumbs/fcc_01.jpg">
+				</div>
+				<div class="card-content">
+				<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				<p><a href="#">This is a link</a></p>
+				</div>
+				<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+	  </div>
+	   <div class="col s4">
+			<div class="card back-order">
+				<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="EEC_Thumbs/fcc_01.jpg">
+				</div>
+				<div class="card-content">
+				<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				<p><a href="#">This is a link</a></p>
+				</div>
+				<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				</div>
+			</div>
+	  </div>
+</div><!-- div row -->
+</div>
+
+<div id="yellow" class="block yellow lighten-5">
+  <nav class="pushpin-eec-nav overflow100" data-target="yellow">
+    <div class="nav-wrapper yellow">
+      <div class="container">
+        <i class="material-icons brand-logo">favorite_border</i>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#red">Home</a></li>
+          <li><a href="#deep-purple">freeCodeCamp </a></li>
+          <li><a href="#light-blue">free Projects</a></li>
+          <li><a href="#green">Commercial Projects</a></li>
+          <li class="active"><a href="#yellow">My Front End Certificate</a></li>
+          <li ><a href="#orange">Connect</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div id="orange" class="block orange lighten-5">
+  <nav class="pushpin-eec-nav overflow100" data-target="orange">
+    <div class="nav-wrapper orange">
+      <div class="container">
+        <i class="material-icons brand-logo">group</i>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li ><a href="#red">Home</a></li>
+          <li><a href="#deep-purple">freeCodeCamp </a></li>
+          <li><a href="#light-blue">free Projects</a></li>
+          <li><a href="#green">Commercial Projects</a></li>
+          <li><a href="#yellow">My Front End Certificate</a></li>
+          <li class="active"><a href="#orange">Connect</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
 		
-		</div>
-		<div class="col info">
-			<h4>My future.</h4>
-			<p>I would like to be a part of something bigger than I am now, I am very seriuosly thinking to leave Ukraine. It will be hard for me, two floor house, family, history. I put too much time, effort and money 
-			to live here, so actually if compare, I can buy same house in Germany somewhere on border with Poland and this destructing me to much. I had 10 years behind and two educations, in marine trading area, and I do not see my future in this.</p>
-			<p>My future is: Russian-american girl, designer, two our kids and sucessful live and career as a Front End Developer.</p>
-			<p>PS: If you not designer - who cares, if you american. xD</p>
-		</div>
 		
-	</div>
-	  <div id="projects"class="row justify-content-md-center section">
-		<div class=""><h5 class="over">Projects</h5></div>
-	</div>
-<div class="row">
-  <div class="col">FreeCodeCamp projects</div>
-  <div class="col">
-  <a href="#" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/fcc_04.jpg" alt="TicTac Toe"/></a>
-  </div>
-  <div class="col">
-  <a href="#" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/fcc_03.jpg" alt="Weather app"/></a>
-  </div>
-  <div class="col">
-  <a href="#" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/fcc_02.png" alt="Quote machine"/></a>
-  </div>
-  <div class="col">
-  <a href="#" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/fcc_01.jpg" alt="Tribute page"/></a>
-  </div>
-  </div>
-	<div class="row">
-	<div class="col">Fun projects.</div>
-
- <div class="col">
-  <a href="#" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/Selection.jpg" alt="Place reserved"/></a>
-  </div>
-  <div class="col">
-  <a href="#" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/fun_03.png" alt="Portfolio"/></a>
-  </div>
-  <div class="col">
-  <a href="#" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/fun_02.png" alt="Code to wordpress"/></a>
-  </div>
-  <div class="col">
-  <a href="#" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/fun_01.jpg" alt="Haloween mod for site"/></a>
-  </div>
-  </div>
-<div class="row">
-	<div class="col">Commercial projects.</div>
-  <div class="col">
-  <a href="#" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/Selection.jpg" alt="Place reserved"/></a>
-  </div>
-  <div class="col">
-  <a href="#" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/Selection.jpg" alt="Place reserved"/></a>
-  </div>
-  <div class="col">
-  <a href="#" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/Selection.jpg" alt="Place reserved"/></a>
-  </div>
-  <div class="col">
-  <a href="#" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/Selection_063.jpg" alt="First commercial project"/></a>
-  </div>
-</div>
-<div class="row">
-	<div class="col">Non programming projects.</div>
-  <div class="col">
-  <a href="#" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/EEC.png" alt="Place reserved"/></a>
-  </div>
-  <div class="col">
-  <a href="#" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/Selection.jpg" alt="Uni-table"/></a>
-  </div>
-  <div class="col">
-  <a href="#" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/non_01.jpeg" alt="Awesome bed"/></a>
-  </div>
-  <div class="col">
-  <a href="#" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/non_02.jpg" alt="Overclocked mice"/></a>
-  </div>
-</div>
-
-  <div id="social"class="row justify-content-md-center section">
-		<div class=""><h5 class="over">Social</h5></div>
-	</div>
-
-	<div class="row">
-		<div class="col">
-			<a href="http://blog.gavelweb.pro/" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/Blog.png" alt="Place reserved"/></a>
-			<p>This is my favorite place</p>
-		</div>
-		<div class="col">
-			<a href="http://gavelweb.pro/" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/Site.png" alt="Place reserved"/></a>
-			<p>I do not like actually my site, and long time thinking about total rework.</p>
-		</div>
-		<div class="col">
-			<a href="https://www.facebook.com/igor.gavelyuk" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/Facebook.png" alt="Place reserved"/></a>
-			<p>Sometimes I visit my page, just if project completed or something similar.</p>
-		</div>
-		<div class="col">
-			<a href="https://www.vk.com/EvilEpicCoder" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/Vk.jpg" alt="Place reserved"/></a>
-			<p>My depressed thoughts leave here.</p>
-		</div>
-		<div class="col">
-			<a href="https://twitter.com/EvilEpicCoder" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/Twitter.jpg" alt="Place reserved"/></a>
-			<p>I love Twitter, any update, anything what I am doing you will know it.</p>
-		</div>
-		<div class="col">
-			<a href="https://github.com/EvilEpicCoder" target="_blank"><img class="img-thumbnail" src="EEC_Thumbs/Github.jpg" alt="Place reserved"/></a>
-			<p>I love Github, it like twitter for coding Jedi, for regular people it actually very difficlt to undersatnd what happend.</p>
-		</div>
-	</div>
-	 <div id="connect"class="row justify-content-md-center section">
-		<div class=""><h5 class="over">Connect</h5></div>
-	</div>
-		<div class="row section justify-content-md-center">
-		<input id="subscribe-email" value="" placeholder="Your email" name="member[email]" class="email" type="email">
-		<input name="member[subscribe]" class="button" onclick="this.form.submit(); this.disabled=true; this.value='Sending...';" value="Subscribe" type="submit">
-		</div>
-<div id="count-particles">Here particles count message
-</div>
-
-</div>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-<script src="main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-</body>
-
-</html>
+        <footer class="page-footer footer-copyright orange">
+         
+            <div class="container center">
+            © 2017 EvilEpicCoder
+          </div>
+        </footer>
+        
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+      <script>
+   $('.pushpin-eec-nav').each(function() {
+    var $this = $(this);
+    var $target = $('#' + $(this).attr('data-target'));
+    $this.pushpin({
+      top: $target.offset().top,
+      bottom: $target.offset().top + $target.outerHeight() - $this.height()
+    });
+  });
+   $(document).ready(function(){
+    $('.target').pushpin({
+      top: 0,
+      bottom: 1000,
+      offset: 0
+    });
+  });
+ </script>    
+ </body>
+ </html>
