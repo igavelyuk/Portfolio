@@ -1,0 +1,117 @@
+.top-offset-100{
+	top:100px;
+}
+.big-margin{
+display:inline-block!important;
+	margin:10px;
+	border:5px;
+}
+.canvas {
+position: absolute;
+  /*display: block;*/
+  width: 100%;
+  height: 400%;
+  
+  top:50px;
+  vertical-align: top;
+}
+#particles-js {
+  background-color: #fafafa;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  z-index:-1;
+}
+.crazy{
+	font-size:72px;
+	font-family:'Arial';
+	padding:30px;
+	color:#292B2C;
+}
+.section{
+	margin-top:5%;
+	margin-bottom:5%;
+}
+p{font-size:10px;
+}
+h2, h3, h4{
+	font-size:20px!important;
+}
+h5{
+	font-size:60px!important;
+}
+.col{
+margin:5px;	
+}
+.btn-deco{
+	height:32px;
+	width:32px;
+	text-decoration:none;
+	display:block;
+	padding: 3px;
+	border: 1px #000 solid;
+    border-radius:4px;
+}
+.btn-link
+{
+	
+	background: linear-gradient(#c0c0c0,#4cffb2,#c0c0c0);
+    color:white;
+}
+.btn-link:hover
+{
+	background: linear-gradient(#4cffb2,#c0c0c0,#4cffb2);
+    color:black;
+}
+.i-twitter{
+	background-image:url("icons/glyphicons-social-32-twitter.png");
+	background-position: left center;
+    background-repeat: no-repeat;
+    padding:5px 37px 5px 5px;
+    background-size: 24px 24px;
+}
+.i-facebook{
+	background-image:url("icons/glyphicons-social-31-facebook.png");
+	background-position: left center;
+    background-repeat: no-repeat;
+    padding:5px 37px 5px 5px;
+    background-size: 24px 24px;
+}
+.i-vk{
+	background-image:url("icons/glyphicons-social-67-vk.png");
+	background-position: left center;
+    background-repeat: no-repeat;
+    padding:5px 37px 5px 5px;
+    background-size: 24px 24px;
+}
+.i-fcc{
+	background-image:url("icons/fcc.png");
+	background-position: left center;
+    background-repeat: no-repeat;
+    padding:5px 37px 5px 5px;
+    background-size: 24px 24px;
+}
+.margin_auto{
+margin:auto;
+}
+.info{
+	
+}
+.eec-read-toggle{
+	display:none;
+}
+.eec-read-toggle-on{
+	display:inline-block;
+	height:4px;
+	width:8px;
+	background:#FFB24D;
+	color:#888888;
+}
+.eec-read-toggle-off{
+	display:inline-block;
+	height:4px;
+	width:8px;
+	background:#4DDBFF;
+	color:#c0c0c0;
+}
