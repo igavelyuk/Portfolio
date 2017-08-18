@@ -4,8 +4,8 @@
 #### History
 I've have created few portfolios, this is number 3 portfolio.
 First one was on clear CSS and HTML luck of cross browser/mobile compability.
-Second on Bootstrap framework completely removed and separated to a secial project.
-Third one I've found very interesting Materialize framework, and I found 
+Second on Bootstrap framework completely removed and separated to a special project.
+Third one I've found very interesting Materialize framework.
 
 #### Objectives
 1. Create scroling page.
